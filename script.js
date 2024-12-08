@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const upload = require("./utils/muterConfig");
 
 const userModel = require('./models/user');
 const postModel = require('./models/post');
@@ -13,7 +14,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended : true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(cookieParser());
-
 
 app.get("/", (req,res) => {
     res.render("index");
@@ -26,6 +26,17 @@ app.get("/create", (req,res) => {
 app.get('/login', (req,res) => {
     res.render("login")
 })
+
+app.get("/profile/upload", isLoggedIn,(req,res) => {
+    res.render('profilePic');
+});
+
+app.post("/upload", isLoggedIn , upload.single("image") , async (req,res) => {
+    let user = await userModel.findOne({email : req.user.email});
+    user.profilePic = req.file.filename;
+    await user.save();
+    res.redirect("/profile"); 
+});
 
 
 app.post("/create", (req,res) => {
