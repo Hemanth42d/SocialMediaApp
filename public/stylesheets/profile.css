@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.mainContainer{
+    margin-top: 20px;
+    padding-top: 15px;
+    /* border: 2px solid white; */
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: rgb(35, 35, 35);
+
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainContainer h1 {
+    margin: 20px 0px 20px 20px;
+}
+
+
+.textareaClass{
+    resize: none;
+    width: 75%;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 20px;
+}
+
+.submitbtn{
+    padding: 10px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.submitbtn:hover{
+    cursor: pointer;
+}
+
+.posts{
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.post{
+    margin: 10px;
+    padding: 15px;
+    width: 90%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+}
+
+.post p{
+    margin-bottom: 10px;
+}
+
+.details {
+    font-size: medium;
+    margin-bottom: 10px;
+}
+
+.postBtns{
+    display: flex;
+    gap: 30px;
+}
+
+.postBtns a{
+    text-decoration: none;
+    color: blue;
+}
+
+.likesCount{
+    margin-bottom: 10px;
+    font-size: smaller;
+}
+
+.logoutBtn{
+    background-color: red;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.postHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.postHeader a {
+    text-decoration: none;
+    color: red;
+}
+
+.submitEditbtn{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.submitEditbtn:hover{
+    cursor: pointer;
+}
+
+.yourPost p {
+    font-size: 20px;
+}
+
+.noPosts{
+    color: rgb(109, 109, 109);
+    margin-top: 20px;
+    margin-left: 10px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header>
+        <p class="title">Social Media App</p>
+      </header>
+      <div class="registerPage">
+        <p class="registerPageHeading">Create an account</p>
+        <div class="formSec">
+          <form action="/create" method="post">
+            <input
+              class="inputName"
+              type="text"
+              placeholder="Enter Your Name"
+              name="name"
+            />
+            <input
+              class="inputUsername"
+              type="text"
+              placeholder="Enter your username"
+              name="username"
+            />
+            <input
+              class="inputEmail"
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+            />
+            <input
+              class="inputPassword"
+              type="password"
+              placeholder="Enter your password"
+              name="password"
+            />
+            <input
+              class="inputAge"
+              type="number"
+              placeholder="Enter your age"
+              name="age"
+            />
+            <a href="/login" class="profileLogin"
+              >Already have an account? Login</a
+            >
+            <div class="submitBtn">
+              <input class="btn" type="submit" value="Create User" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

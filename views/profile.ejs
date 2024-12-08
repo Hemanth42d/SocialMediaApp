@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="heading">
+        <h1>Hello, <%= user.name %>👋🏻</h1>
+        <div>
+          <a class="logoutBtn" href="/logout">Logout</a>
+        </div>
+      </div>
+      <div class="formSec">
+        <form action="/post" method="post">
+          <textarea
+            class="textareaClass"
+            name="content"
+            placeholder="What's on your mind?"
+          ></textarea>
+          <input class="submitbtn" type="submit" value="Create Post" />
+        </form>
+      </div>
+      <div class="posts">
+        <div class="yourPost">
+          <p>Your posts</p>
+        </div>
+        <% if(user.posts.length > 0) { %> <% user.posts.forEach((post) => { %>
+        <div class="post">
+          <div class="postHeader">
+            <p>@<%= user.username %></p>
+            <a href="/delete/<%= post._id %>">Delete</a>
+          </div>
+          <div class="details">
+            <p class="postcontent"><%= post.content %></p>
+          </div>
+          <div class="likesCount"><%= post.like.length %> Likes</div>
+          <div class="postBtns">
+            <a href="/like/<%= post._id %>">
+              <% if(post.like.indexOf(user._id) === -1){ %>
+              <p>Like</p>
+              <% } else{ %>
+              <p>Unlike</p>
+              <% } %>
+            </a>
+            <a href="/edit/<%= post._id %>">Edit</a>
+          </div>
+        </div>
+        <% }) %> <% } else { %>
+        <p class="noPosts">No Posts Yet</p>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="mainContainerLogin">
+      <header>
+        <p class="loginPageTitle">Social Media App</p>
+      </header>
+      <div class="LoginPage">
+        <p class="LoginPageHeading">Login your account</p>
+        <div class="formSec">
+          <form action="/login" method="post">
+            <input
+              class="inputEmail"
+              type="email"
+              placeholder="Enter your email"
+              name="email"
+            />
+            <input
+              class="inputPassword"
+              type="password"
+              placeholder="Enter your password"
+              name="password"
+            />
+            <a href="/create" class="profileRegister"
+              >Don't have an account? Register</a
+            >
+            <div class="submitBtn">
+              <input class="btn" type="submit" value="Login account" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

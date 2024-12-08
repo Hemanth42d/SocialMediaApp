@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="formSec">
+        <h1>Update Post</h1>
+        <form action="/Update/<%= post._id %>" method="post">
+          <textarea class="textareaClass" name="content">
+<%= post.content %></textarea
+          >
+          <input class="submitEditbtn" type="submit" value="Update Post" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
