@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.mainContainer{
+    margin-top: 20px;
+    padding-top: 15px;
+    width: 50%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: rgb(35, 35, 35);
+
+}
+
+.mainContainer h1{
+    padding: 10px;
+}
+
+.formSec{
+    padding: 10px;
+}
+
+.inputFile{
+    display: block;
+    margin-left: 10px;
+    border: 2px solid rgb(46, 46, 46);
+    padding: 5px;
+}
+
+.uploadBtn{
+    padding: 5px;
+    margin: 10px;
+    font-size: medium;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.uploadBtn:hover{
+    cursor: pointer;
+}
