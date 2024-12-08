@@ -7,9 +7,9 @@ and also done basic CRUD operations like deleting a post, Creating a post,Updati
 
 # Features
 
-.Creating an user Account
-.Login and logout your account
-.Creating a post
-.Deleting a post
-.Updating a post
-.Like a post and unlike a post
+**Creating an user Account**
+**Login and logout your account**
+**Creating a post**
+**Deleting a post**
+**Updating a post**
+**Like a post and unlike a post**
