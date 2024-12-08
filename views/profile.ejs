@@ -9,10 +9,18 @@
   <body>
     <div class="mainContainer">
       <div class="heading">
-        <h1>Hello, <%= user.name %>👋🏻</h1>
+        <div class="profileSec">
+          <div class="profileImg">
+            <img src="/images/uploads/<%= user.profilePic %>" alt="" />
+          </div>
+          <h1>Hello, <%= user.name %>👋🏻</h1>
+        </div>
         <div>
           <a class="logoutBtn" href="/logout">Logout</a>
         </div>
+      </div>
+      <div class="uploadProfile">
+        <a href="/profile/upload">Upload Profile Pic</a>
       </div>
       <div class="formSec">
         <form action="/post" method="post">
