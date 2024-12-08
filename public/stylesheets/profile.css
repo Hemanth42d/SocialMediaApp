@@ -12,7 +12,6 @@ body{
 .mainContainer{
     margin-top: 20px;
     padding-top: 15px;
-    /* border: 2px solid white; */
     width: 50%;
     min-height: 100vh;
     margin: auto;
@@ -138,4 +137,25 @@ body{
     color: rgb(109, 109, 109);
     margin-top: 20px;
     margin-left: 10px;
+}
+
+.profileSec{
+    display: flex;
+    align-items: center;
+}
+
+.profileImg img{
+    border-radius: 50%;
+    height: 6vh;
+    width: 3vw;
+    margin-left: 20px;
+}
+
+.uploadProfile{
+    margin: 0px 0px 20px 20px;
+}
+
+.uploadProfile a {
+    text-decoration: none;
+    color: blue;
 }
